@@ -1,6 +1,6 @@
 from django.db import models
 import diciplina
 import professor
-import diciplina
+import diciplinaOfertada
 
 # Create your models here.
