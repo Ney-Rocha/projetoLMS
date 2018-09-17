@@ -1,3 +1,5 @@
+from django.db import models
+
 class DisciplinaOfertada(models.Model):
 
     def save(self):
