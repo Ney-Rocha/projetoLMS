@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Disciplina</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/datapicker/datepicker3.css">
+    <link rel="stylesheet" href="css/touchspin/jquery.bootstrap-touchspin.min.css">
+    
+  </head>
+  <body>
+    <h1 class="text-center">Cadastro Disciplina</h1>
+    <div class="container">
+      <div class="col-md-12">
+        <form action="#">
+          <div class="form-group col-md-12">
+            <label for="nomeDisciplina" class="label-control">Nome Disciplina</label>
+            <input type="text" name="nomeDisciplina" class="form-control">
+          </div>
+
+          <div class="ibox-content col-md-12">
+            <div class="form-group" id="data_1">
+                <label class="font-noraml">Data</label>
+                <div class="input-group date">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/04/2014">
+                </div>
+            </div>          
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="status" class="label-control">Status</label>          
+            <select class="form-control" name="status">
+                <option value="">Selecione</option>
+                <option value="Aberta">Aberta</option>
+                <option value="Fechada">Fechada</option>
+            </select>
+          </div>
+
+
+          <div class="form-group col-md-12">
+            <label for="planoEnsino" class="label-control">Plano de Ensino</label>
+            <textarea name="planoEnsino" class="form-control" id="planoEnsino" cols="10" rows="3"></textarea>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="cargaHoraria" class="label-control">Carga Horaria</label>          
+            <select class="form-control" name="cargaHoraria">
+                <option value="">Selecione</option>
+                <option value="40horas">40 horas</option>
+                <option value="80horas">80 horas</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="competencias" class="label-control">Competências</label>
+            <textarea name="competencias" class="form-control" id="planoEnsino" cols="10" rows="3"></textarea>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="habilidades" class="label-control">habilidades</label>
+            <textarea name="habilidades" class="form-control" id="planoEnsino" cols="10" rows="3"></textarea>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="Ementa" class="label-control">Ementa</label>
+            <textarea name="Ementa" class="form-control" id="planoEnsino" cols="10" rows="3"></textarea>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="conteudoProgramatico" class="label-control">Conteúdo Programatico</label>
+            <textarea name="conteudoProgramatico" class="form-control" id="planoEnsino" cols="10" rows="3"></textarea>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="bibliografiaBasica" class="label-control">Bibliografia Básica</label>
+            <textarea name="bibliografiaBasica" class="form-control" id="planoEnsino" cols="10" rows="3"></textarea>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="bibliotecaComplementar" class="label-control">Biblioteca Complementar</label>
+            <textarea name="bibliotecaComplementar" class="form-control" id="planoEnsino" cols="10" rows="3"></textarea>
+          </div>
+          
+          <div class="col-md-6">
+            <label for="percentualPratico" class="label-control">Percentual Prático</label>
+            <input class="touchspin2" type="text" value="55" name="demo2">
+          </div>
+  
+          <div class="col-md-6">
+            <label for="percentualTeorico" class="label-control">Percentual Teórico</label>
+  
+            <input class="touchspin2" type="text" value="55" name="demo2">
+          </div>          
+
+          <div class="form-group col-md-12">
+            <label for="cargaHoraria" class="label-control">Carga Horaria</label>          
+            <select class="form-control" name="cargaHoraria">
+                <option value="">Selecione</option>
+                <option value="joao">Joao</option>
+                <option value="maria">Maria</option>
+            </select>
+          </div>
+          <div class="form-group text-center col-md-12">
+            <button type="submit" class="btn btn-info btn-lg">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/datapicker/bootstrap-datepicker.js"></script>
+    <script src="js/touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+          $('#data_1 .input-group.date').datepicker({
+              todayBtn: "linked",
+              keyboardNavigation: false,
+              forceParse: false,
+              calendarWeeks: true,
+              autoclose: true
+          });
+
+          $(".touchspin2").TouchSpin({
+                min: 0,
+                max: 100,
+                step: 0.1,
+                decimals: 2,
+                boostat: 5,
+                maxboostedstep: 10,
+                postfix: '%',
+                buttondown_class: 'btn btn-white',
+                buttonup_class: 'btn btn-white'
+            });
+        });
+    </script>
+
+  </body>
+</html>

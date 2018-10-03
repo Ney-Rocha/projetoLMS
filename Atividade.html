@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atividade</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        
+  </head>
+  <body>
+    <h1 class="text-center">Atividade</h1>
+    <div class="container">
+      <div class="col-md-12">
+        <form action="#">
+          <div class="form-group col-md-6">
+            <label for="titulo" class="label-control">Título Atividade</label>
+            <input type="text" name="titulo" class="form-control">
+          </div>
+
+          <div class=" form-group  col-md-12">
+            <label for="descricao" class="label-control">Descriçao</label>  
+            <textarea name="descricao" class="form-control" id="descricao" cols="10" rows="3"></textarea>
+          </div>
+
+          <div class=" form-group  col-md-12">
+            <label for="Conteudo" class="label-control">Conteúdo</label>  
+            <textarea name="Conteudo" class="form-control" id="Conteudo" cols="10" rows="3"></textarea>
+          </div> 
+          
+          <div class="form-group col-md-12">
+            <label for="tipoAtividade" class="label-control">Tipo Atividade</label>          
+            <select class="form-control" name="tipoAtividade">
+                <option value="">Selecione</option>
+                <option value="respostaAberta">Resposta Aberta</option>
+                <option value="Teste">Teste</option>
+            </select>
+          </div>
+
+          <div class="col-md-12">
+            <label for="Extras" class="label-control">Extras</label>  
+            <textarea name="Extras" class="form-control" id="Extras" cols="10" rows="3"></textarea>
+          </div> 
+
+          <div class="form-group col-md-6">
+            <label for="professor" class="label-control">Professor</label>          
+            <select class="form-control" name="professor">
+                <option value="">Selecione</option>
+                <option value="joao">joao</option>
+                <option value="maria">maria</option>
+            </select>
+          </div>
+
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-info btn-lg">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+  </body>
+</html>

@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mensagem</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/datapicker/datepicker3.css">
+    <link rel="stylesheet" href="css/touchspin/jquery.bootstrap-touchspin.min.css">
+    
+  </head>
+  <body>
+    <h1 class="text-center">Mensagem</h1>
+    <div class="container">
+      <div class="col-md-12">
+        <form action="#">
+
+          <div class="form-group col-md-6">
+            <label for="Aluno" class="label-control">Aluno</label>          
+            <select class="form-control" name="Aluno">
+                <option value="">Selecione</option>
+                <option value="joao">joao</option>
+                <option value="maria">maria</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="professor" class="label-control">Professor</label>          
+            <select class="form-control" name="professor">
+                <option value="">Selecione</option>
+                <option value="joao">joao</option>
+                <option value="maria">maria</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="assunto" class="label-control">Assunto</label>
+            <input type="text" name="assunto" class="form-control">
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="referencia" class="label-control">Referência</label>
+            <input type="text" name="referencia" class="form-control">
+          </div>
+
+          <div class=" form-group  col-md-12">
+            <label for="Conteudo" class="label-control">Conteúdo</label>  
+            <textarea name="Conteudo" class="form-control" id="Conteudo" cols="10" rows="3"></textarea>
+          </div>
+
+          <div class="col-md-6">
+            <div class="ibox-content">
+              <div class="form-group data" id="">
+                  <label class="font-noraml">Data Envio</label>
+                  <div class="input-group date">
+                      <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/04/2014">
+                  </div>
+              </div>          
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="ibox-content">
+              <div class="form-group data" id="">
+                  <label class="font-noraml">Data Resposta</label>
+                  <div class="input-group date">
+                      <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="03/04/2014">
+                  </div>
+              </div>          
+            </div>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="statusMensagem" class="label-control">Status</label>          
+            <select class="form-control" name="statusMensagem">
+                <option value="">Selecione</option>
+                <option value="Disponibilizada">Entregue</option>
+                <option value="Aberta">Corrigido</option>
+            </select>
+          </div>
+
+          
+          <div class=" form-group  col-md-12">
+            <label for="respostamensagem" class="label-control">Resposta Mensagem</label>  
+            <textarea name="respostamensagem" class="form-control" id="respostamensagem" cols="10" rows="3"></textarea>
+          </div>
+
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-info btn-lg">Enviar</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/datapicker/bootstrap-datepicker.js"></script>
+    <script src="js/touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('.data  .input-group.date').datepicker({
+              todayBtn: "linked",
+              keyboardNavigation: false,
+              forceParse: false,
+              calendarWeeks: true,
+              autoclose: true
+          });
+
+          $(".touchspin2").TouchSpin({
+                min: 0,
+                max: 100,
+                step: 0.1,
+                decimals: 2,
+                boostat: 5,
+                maxboostedstep: 10,
+                postfix: '%',
+                buttondown_class: 'btn btn-white',
+                buttonup_class: 'btn btn-white'
+            });
+        });
+    </script>
+
+  </body>
+</html>
