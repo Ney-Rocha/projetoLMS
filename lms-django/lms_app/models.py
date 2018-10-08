@@ -1,7 +1,6 @@
 from django.db import models
 
-import lms_app.diciplina
-import lms_app.professor
-import lms_app.diciplinaOfertada
-
-# Create your models here. 
+from lms_app.professor import Professor
+from lms_app.disciplina import Disciplina
+from lms_app.aluno import Aluno
+from lms_app.disciplinaOfertada import DisciplinaOfertada
